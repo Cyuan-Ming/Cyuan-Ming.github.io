@@ -17,8 +17,14 @@ function addInputBox_Event(objectName, comfirmText) {
         }
       }
     });
-  }
+}
 
 function ConfirmEvent() {
-    
+    if (document.getElementById("Password_1").classList.contains("is-valid") && document.getElementById("Password_2").classList.contains("is-valid") && document.getElementById("Password_3").classList.contains("is-valid")){
+        console.log("Correct");
+        window.location.href='https://drive.google.com/file/d/10AzXzSJw7W3FbtUNzzIPzeXu6LHg87yG/view?usp=share_link';
+    }else {
+        console.log("failed");
+        $("#exampleModal").modal("show");
+    }
 }

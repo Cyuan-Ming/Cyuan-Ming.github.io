@@ -1,6 +1,15 @@
 body {
-    background-image: url(background.jpg);
-    background-size: cover;
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #223d57, #a85a7a91);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #223d57, #a85a7a91)
+    /* background-image: url(background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover; */
 }
 
 /* label {
